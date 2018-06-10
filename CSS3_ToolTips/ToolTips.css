@@ -95,11 +95,11 @@ a:link,a:visited,a:focus {
 	content: "";
 	width: 30px;
 	height: 20px;
-	background: url(jian.png) no-repeat center center;
+	background: url(tooltip1.svg) no-repeat center center;
 	position: absolute;
 	top: 100%;
 	left: 50%;
-	margin:-1px 0 0 -15px;
+	margin:-7px 0 0 -15px;
 
 }
 .tooltip-effcet-1 .tooltip-content {
