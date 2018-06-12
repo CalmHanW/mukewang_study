@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+</head>
+<body>
+	<canvas id="canvas" width="1024" height="768" style="border: 1px solid #aaa; display: block;margin: 50px auto;"></canvas>
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById("canvas");
+			/*在js中定义canvas的画布大小*/
+			/*canvas.width = 1024;
+			canvas.height = 768;*/
+			/*if (canvas.getContext("2d")) {
+				// context提供了绘制所需的真正的接口
+				var context = canvas.getContext("2d")
+			}
+			else{
+				alert('请更换浏览器后重试')
+			}*/
+			var context = canvas.getContext("2d")
+
+            context.beginPath();
+			context.moveTo(100,100);/*绘制的起始点*/
+			context.lineTo(700,700);
+			context.closePath();
+			context.lineWidth = 5;/*设置直线的宽度*/
+			context.strokeStyle = "#005588";
+			context.stroke();//笔画，用于绘制线条
+			
+            
+            context.beginPath();
+			context.moveTo(100,100);
+			context.lineTo(300,300);
+			context.lineTo(100,300);
+			context.lineTo(100,100);
+			context.closePath();
+			context.fillStyle = "rgba(2,200,30,0.5)";
+			context.fill();
+
+			/*context.lineWidth = 5;
+			context.strokeStyle = "red";
+			context.stroke();*/
+		}
+	</script>
+</body>
+</html>

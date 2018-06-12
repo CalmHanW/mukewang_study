@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas-qiqiaoban</title>
+</head>
+<body>
+	<canvas id="canvas" style="border: 1px solid #aaa; display: block;margin: 50px auto;"></canvas>
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById("canvas");
+			/*在js中定义canvas的画布大小*/
+			canvas.width = 1024;
+			canvas.height = 800;
+
+			var context = canvas.getContext("2d");
+
+			context.lineWidth = 5;
+			context.strokeStyle = "#005588";
+			for(var i=0;i<10;i++){
+				context.beginPath();
+				context.arc(50+i*100,60,20,0,2*Math.PI*(i+1)/10);
+				context.closePath();//自动封闭绘制的图型
+			    context.stroke();
+			}
+			for(var i=0;i<10;i++){
+				context.beginPath();
+				context.arc(50+i*100,100,20,0,2*Math.PI*(i+1)/10);
+			    context.stroke();
+			}
+			for(var i=0;i<10;i++){
+				context.beginPath();
+				context.arc(50+i*100,150,20,0,2*Math.PI*(i+1)/10,true);
+				context.closePath();//自动封闭绘制的图型
+			    context.stroke();
+			}
+			context.fillStyle = "#005588";
+			for(var i=0;i<10;i++){
+				context.beginPath();
+				context.arc(50+i*100,200,20,0,2*Math.PI*(i+1)/10,true);
+				context.closePath();//自动封闭绘制的图型
+			    context.fill();
+			}
+			context.fillStyle = "#005588";
+			for(var i=0;i<10;i++){
+				context.beginPath();
+				context.arc(50+i*100,250,20,0,2*Math.PI*(i+1)/10,true);
+				/*context.closePath();//自动封闭绘制的图型*/
+			    context.fill();
+			}
+			
+		}
+		
+	</script>
+</body>
+</html>
