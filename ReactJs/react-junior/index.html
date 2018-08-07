@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>react</title>
+
+	<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+
+</head>
+<body>
+	<div id="container"></div>
+
+	<script type="text/babel">
+
+		
+		<!-- var HelloMessage = React.createClass({  
+			render: function() {    
+				return <div>Hello {this.props.name}</div>;  
+				}
+		    });
+			React.render(  <HelloMessage name="John" />,  
+			document.getElementById('container'));
+		
+		
+		var LikeButton = React.createClass({
+			getInitialState: function(){
+				return {liked: false};
+		},
+			handleClick: function(event) {
+				this.setState({liked: !this.state.liked});
+		},
+			render: function(){
+			var text = this.state.liked? '喜欢':'不喜欢';
+			return(
+			<p onclick = {this.handleClick}>你<b>{text}</b>我。点我切换状态。</p>
+		   );
+			    }
+			});
+		
+			ReactDOM.render(
+		<LikeButton/>,
+		document.getElementById('example')
+			);
+		
+			var webSite = React.createClass({
+		
+		getIninialState: function(){
+			return{
+				name: "w3cschool教程",
+				site: "hedfkvsjdfkvksdf"
+		};
+			},
+			render: function(){
+		return(
+			<div>
+				<Name name={this.state.name}/>
+				<Link site={this.state.site}/>
+			</div>
+		);
+		}
+		});
+		
+		var Name = React.createClass({
+			render: function(){
+		return(
+			<h1>{this.props.name}</h1>
+		)
+		}
+		});
+		var Link = React.createClass({
+			render: function() {
+		<a href={this.props.site}>
+			{this.props.site}
+		</a>
+		}
+		}); -->
+	</script>
+	<!-- <script type="text/jsx">
+		function textJSX() {
+		return (<div>text JSX</div>);
+	}
+	</script> -->
+	<!-- <div id="example"></div>
+	<script type="text/babel">
+		ReactDOM.render(
+			<h1>hello,world!</h1>,
+			document.getElementById('example')
+		);
+	</script> -->
+</body>
+</html>
