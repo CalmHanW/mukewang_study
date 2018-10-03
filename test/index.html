@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script   src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+	<button id="clickMe"  onclick="move(this)">Click Me</button>
+	<button id="clickMe1"  ">Click Me</button>
+	<label for="w">hahah</label>
+	<!-- <input id= "w"  type="password" name=""> -->
+	<!-- <button  name="xxx" code="222" id="yuanEvent" onclick="pp(event,this)">事件監聽</button>
+	    <button  name="xxx" code="222" id="yuanEvent2" >事件監聽</button> -->
+
+	<script type="text/javascript">
+		function move(obj){
+			console.log(obj);
+			/*console.log(event)*/
+		}
+		$("#clickMe1").click(move);
+		/*$(function(){
+        	$("#yuanEvent2").click(pp1)
+    	})
+    //静态绑定
+       function pp(obj,event){
+        console.log(obj)
+        console.log(event)
+        console.log(this)
+        // alert(this.text())
+    }
+
+    function pp1(){
+        // console.log(obj)
+        console.log(event)
+        console.log(this)
+        // alert(this.text())
+    }*/
+
+		/*var button = document.getElementById('clickMe');
+		button.onclick = function() {
+			console.log('1. You click Button');
+		};
+		document.body.onclick = function() {
+			console.log('2. You click body');
+		};
+		document.onclick = function() {
+			console.log('3. You click document');
+		};
+		window.addEventListener('click', function() {
+            console.log('4. You click window');
+        }, true);*/
+		/*window.onclick = function() {
+			console.log('4. You click window');
+		};*/
+	</script>
+</body>
+</html>
