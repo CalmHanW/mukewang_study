@@ -2,7 +2,7 @@
 * @Author: HP
 * @Date:   2018-08-19 10:43:27
 * @Last Modified by:   hanniuqueen
-* @Last Modified time: 2018-10-03 00:43:37
+* @Last Modified time: 2018-10-05 21:32:29
 */
 /*function useArguments() {
     var sum = 0;
@@ -744,7 +744,80 @@ console.log(a);*/
 
 /*console.log(new Array(5).join("wanghan"));*/
 
-var  a = "ADDFXD";
+/*var  a = "ADDFXD";
 for(let i=0;i<10,i++){
 
+}*/
+/*
+function count(str) {
+    var result = {};
+    for(let i=0;i<str.length;i++){
+        if(str[i] in result){
+            result[str[i]]++;
+        }else{
+            if(str[i] == " ") continue;
+            result[str[i]] = 1;
+        }
+    }
+    return result;
 }
+*/
+/*
+function cssStyle2DomStyle(sName) {
+    var arr = sName.split("-");
+    if(arr[0] == ""){
+    	arr.splice(0,1);
+    }
+
+    var result = arr[0];
+    for(let i=1;i<arr.length;i++){
+
+    }
+    console.log(arr);
+}
+console.log(cssStyle2DomStyle('-font-size'));*/
+
+/*var x;
+x=1;
+console.log(x);*/
+
+/*function w(arr,item) {
+	return arr.indexOf(item);
+}
+console.log(w([ 1, 2, 3, 4 ], 3));*/
+/*function sum(arr) {
+    var sum = 0;
+    for(let i=0;i<arr.length;i++){
+        sum += arr[i];
+    }
+    return sum;
+}
+console.log(sum([ 1, 2, 3, 4 ]));*/
+
+
+/*function remove(arr, item) {
+    var res = [];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] != item){
+          res.push(arr[i]);  
+        }
+    }
+    return res;
+}
+console.log(remove([1, 2, 3, 4, 2], 2));*/
+/*
+function removeWithoutCopy(arr, item) {
+    while(arr.indexOf(item)){
+        arr.splice(arr.indexOf(item),1);
+    }
+    return arr;
+}
+console.log(removeWithoutCopy([1, 2, 2, 3, 4, 2, 2], 2));*/
+/*
+function concat(arr1, arr2) {
+	var newArr = arr1.concat(arr2);
+	return newArr;
+}
+console.log(concat([1, 2, 3, 4], ['a', 'b', 'c', 1]));*/
+
+console.log(parseInt("0x18",10));
