@@ -2,7 +2,7 @@
 * @Author: HP
 * @Date:   2018-08-19 10:43:27
 * @Last Modified by:   hanniuqueen
-* @Last Modified time: 2018-10-05 21:32:29
+* @Last Modified time: 2018-11-02 20:23:14
 */
 /*function useArguments() {
     var sum = 0;
@@ -819,5 +819,196 @@ function concat(arr1, arr2) {
 	return newArr;
 }
 console.log(concat([1, 2, 3, 4], ['a', 'b', 'c', 1]));*/
+/*
+console.log(parseInt("0x18",10));*/
 
-console.log(parseInt("0x18",10));
+/*var t = "u";
+function log(){
+	console.log(t);
+	const t = "w";
+}
+log();*/
+
+/*[1,2,3,4].map((parseInt).map(function(result){
+	console.log(result);
+}));*/
+
+
+/*var a = new Object();
+console.log(a instanceof Object);*/
+
+/*var a=5;
+function first(a){
+	a=6;
+	console.log(a);
+}
+function second(){
+	console.log(a);
+}
+first(a);
+second();*/
+
+/*function Person(){
+	//this.name = "M";
+}
+Person.prototype.name = "T";
+
+var p1 = new Person();
+p1.name = "s";
+console.log(p1._proto_);*/
+
+/*
+console.log(true+2);*/
+
+/*for(var i=0,j=0;i<10,j<6;i++,j++){
+	var k = i+j;
+}
+console.log(k);*/
+/*
+for(var i=0;i<10;i++){
+	
+}*/
+/*
+function fn(){
+	var n = 99;
+	add = function(){
+		n += 1;
+	}
+	function fn1(){
+		console.log(n);
+	}
+
+	return fn1;
+}
+var re = fn();
+
+re();*/
+
+/*
+function test(){
+	var re  = [];
+	for(var i=0;i<10;i++){
+		re[i] = function(){
+			return i;
+		}
+	}
+	return re;
+}
+
+console.log(test());*/
+/*
+function count() {
+    var arr = [];
+    for (var i=1; i<=3; i++) {
+        arr.push(function () {
+            return i * i;
+        });
+    }
+    return arr;
+}
+
+var results = count();
+var f1 = results[0];
+var f2 = results[1];
+var f3 = results[2];
+
+console.log(f1());*/
+
+
+/*function Fun(){
+	this.name = "wh",
+	this.school= "nkdfvk"
+}
+Fun.prototype.school = "34623y";
+
+var w = new Fun();
+for(var i in w){
+	console.log(w[i]);
+}
+*/
+
+/*console.log(!"0");*/
+
+
+/*function result(str){
+	var arr_add = str.split("+");
+	var result = 0;
+	if(arr_add.length > 1){
+		for(let i=0;i<arr_add.length;i++){
+			if(arr_add[i].split("-").length > 1){
+				var temp = arr_add[i].split("-");
+				console.log(temp);
+				//var res_del = function(temp){
+					//var res = arr_add[i].split("-");
+					var res_temp = parseInt(temp[0]);
+					//console.log(res_temp);
+					for(let j=1;j<temp.length;j++){
+						//console.log(parseInt(temp[j]));
+						res_temp -= parseInt(temp[j]);
+						//console.log(res_temp);
+					//}
+					//return res_del;
+				}
+				console.log(res_temp);
+				result +=  res_temp;
+				//console.log(result);
+			}
+			else{
+				console.log(parseInt(arr_add[i]));
+				result +=  parseInt(arr_add[i]);
+			}
+		}
+	}
+	return result;
+}
+
+console.log(result("027555+692-0xD32C"));*/
+
+/*if(true){
+	var y=8;
+
+}
+console.log("37"-7);*/
+
+/*var my = "my";
+(function(){
+	console.log(my);
+	var my = "hahah";
+})();*/
+
+/*function luckyNUM(n,arr){
+	var lucky_num = 0;
+	var num = 0;
+	var res = arr.filter(function(ele,index,self) {
+		//return self.indexOf(ele) == index;
+		return index%2 !== 0;
+	});
+
+	while(res.length > 1){
+		res = res.filter(function(ele,index,self) {
+		return index%2 !== 0;
+	   });
+	}
+
+	lucky_num = res[0];
+	num = arr.indexOf(lucky_num)+1;
+
+	return [lucky_num,num];
+}
+
+console.log(luckyNUM(5,[6,66,666,6666,66666]));*/
+
+function search(long,key,str){
+	var count = 1;
+    for(let i=key+1;i<long;i++){
+    	if(str[i] === "{"){
+    		count++;
+    	}else if(str[i] === "}"){
+    		count--;
+    		if(count == 0){return i;}
+    	}
+    }
+}
+
+var rearch = search(20,0,"{a=1{a=2{print(a)}}}")
+console.log(rearch);
